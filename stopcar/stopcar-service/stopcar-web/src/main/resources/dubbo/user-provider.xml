@@ -5,6 +5,6 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <!-- 声明需要暴露的服务接口 -->
-    <dubbo:service interface="com.meitun.user.client.UserFacadeService" ref="userFacadeService" />
+    <dubbo:service interface="com.snow.stop.client.UserFacadeService" ref="userFacadeService" />
 
 </beans>

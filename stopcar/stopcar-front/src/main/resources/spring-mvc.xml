@@ -4,22 +4,6 @@
         >
 
 
-    <!--  annotation默认的方法映射适配器 -->
-    <bean id="handlerMapping" class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
-
-    <bean id="handlerAdapter" class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
-
-    <!-- spring mvc ResponseBody 支持 json -->
-    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
-        <property name="messageConverters">
-            <list>
-                <bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"/>
-            </list>
-        </property>
-    </bean>
-
-
-
     <!-- <bean id="customDubboProxy" class="com.nfsq.xs.market.biz.proxy.CustomDubboProxy"/> -->
 
     <!-- SpringMVC在超出上传文件限制时，会抛出org.springframework.web.multipart.MaxUploadSizeExceededException -->
